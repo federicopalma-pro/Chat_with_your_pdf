@@ -5,6 +5,8 @@ from llm import llm_qa, llm_condense, embeddings, acs
 from streamlit_chat import message
 from langchain.chains import ConversationalRetrievalChain
 
+pdf_container = "<------->"
+storageaccount = "<------->"
 
 # Setup Streamlit  -------------------------------------------------------------------------------------------
 st.set_page_config(page_title='Chat with your pdf')
@@ -121,7 +123,7 @@ if st.session_state.query != "":
 
     answer = response["answer"] + "\n\n" + "References: \n"
     for filename in generated_file_names:
-        answer += f"[{str(filename)}](https://pdfdepot.blob.core.windows.net/soccer-rules/{str(filename)}) \n"
+        answer += f"[{str(filename)}](https://{storageaccount}.blob.core.windows.net/{pdf_container}/{str(filename)}) \n"
 
     for text in phrase_list:
         if text in response["answer"]:
