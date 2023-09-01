@@ -1,1 +1,1 @@
-# Query your A.I. about FIFA Soccer Rules ⚽
+# ⚽ Query your A.I. about FIFA Soccer Rules ⚽
