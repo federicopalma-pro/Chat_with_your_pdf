@@ -32,8 +32,9 @@ SENTENCE_SEARCH_LIMIT = 100
 SECTION_OVERLAP = 100
 
 # Setup
-cognitive_search_index = "soccer-rules"
-pdf_category = "soccer-rules"
+cognitive_search_index = "<------->"
+pdf_category = "<------->"
+storageaccount = "<------->"
 
 storage_creds = config('AZURE_STORAGE_KEY')
 openai.api_type = config('OPENAI.API_TYPE')
@@ -289,7 +290,7 @@ file_pdf = [file for file in file_name if file.lower().endswith(".pdf")]
 
 # ---------- Upload to Azure Container PDF files spit per pages -------------
 for pdf_filename in file_pdf:
-    upload_blobs(filename=("docs\\" + pdf_filename), storageaccount="pdfdepot",
+    upload_blobs(filename=("docs\\" + pdf_filename), storageaccount=storageaccount,
                  container=pdf_category)
 
 # ---------- Create Azure Cognitive Search index ----------------------------
@@ -302,4 +303,4 @@ for pdf_filename in file_pdf:
     index_sections(pdf_filename, sections)
 
 # ------------ Remove pdf file from azure container --------------------------
-# remove_blobs(filename="------", storageaccount="pdfdepot", container="------")
+# remove_blobs(filename="<------->", storageaccount=storageaccount, container="<------->")
