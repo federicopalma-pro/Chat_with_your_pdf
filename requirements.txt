@@ -1,0 +1,12 @@
+streamlit
+streamlit-chat 
+openai
+langchain==0.0.271
+python-decouple
+azure-search-documents==11.4.0b6
+azure-identity
+tiktoken
+azure-storage-blob
+python-dotenv
+azure-core
+pypdf
