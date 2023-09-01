@@ -1,9 +1,9 @@
 from pypdf import PdfReader, PdfWriter
 
-pdf_file_in = "docs\datdz0pms85gbnqy4j3k.pdf"
-pdf_file_out = "docs\soccer-rules.pdf"
-page_start = 8
-page_end = 141
+pdf_file_in = "docs\<------>.pdf"
+pdf_file_out = "docs\<------>.pdf"
+page_start = 0
+page_end = 0
 
 pdf = PdfReader(pdf_file_in)
 
