@@ -26,7 +26,6 @@ from azure.search.documents.indexes.models import (
     VectorSearchAlgorithmConfiguration,
 )
 from tenacity import retry, stop_after_attempt, wait_random_exponential
-from decouple import config
 
 MAX_SECTION_LENGTH = 1000
 SENTENCE_SEARCH_LIMIT = 100
