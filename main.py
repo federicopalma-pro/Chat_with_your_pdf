@@ -4,9 +4,10 @@ import re
 from llm import llm_qa, llm_condense, embeddings, acs
 from streamlit_chat import message
 from langchain.chains import ConversationalRetrievalChain
+from decouple import config
 
-pdf_container = "<------->"
-storageaccount = "<------->"
+pdf_container = config('AZURE_PDF_CONTAINER')
+storageaccount = config('AZURE_STORAGE_ACCOUNT')
 
 # Setup Streamlit  -------------------------------------------------------------------------------------------
 st.set_page_config(page_title='Chat with your pdf')
