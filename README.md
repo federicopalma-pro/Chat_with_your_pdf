@@ -68,4 +68,13 @@ In order to populate your vector database (Azure Cognitive Search) and Azure Blo
 
 This script is used to read a PDF file and write specific pages of that file to a new PDF.
 
+### main.py:
+Serves as the core of the application, which is built on Streamlit. To run the application, follow these steps:
+1. Clone this repository to your local machine.
+2. Create and activate a Python virtual environment.
+3. Install all required libraries using the command ​```pip install -r requirements.txt```
+4. Within the activated virtual environment, launch the application using the command ​```streamlit run main.py```
+
+This will get the Streamlit application up and running on your local machine.
+
 
