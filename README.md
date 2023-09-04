@@ -9,3 +9,15 @@ The core of this project is the Langchain Conversational Retrieval Chain, a soph
 My goal is to provide a comprehensive example of how to build an AI-powered chat application, guiding you through each step, from setting up the Streamlit session states, handling form submissions, retrieving and processing the AI responses to creating an interactive chat interface.
 
 Whether you're a beginner just starting with NLP or an experienced developer looking for inspiration for your next project, this repository is valuable. We encourage you to explore the code, try running it on your local machine, and let us know if you have any questions or feedback. Happy coding!
+
+## Technical environment
+
+The technical environment for this project is built on the robust and scalable infrastructure of Azure Cloud. Each application component leverages a specific Azure service, ensuring optimal performance and seamless integration between different system parts.
+
+The core of our application, the Large Language Model (LLM), is hosted on Azure OpenAI. 
+
+Application also utilizes Azure Cognitive Search. I use it as a vector database, allowing application to quickly and efficiently retrieve the most relevant information in response to user queries.
+
+Lastly, all the PDF files used as reference documents by our application are stored in Azure Blob Storage. This service allows application to store, retrieve, and link to PDF files highly efficiently and cost-effectively.
+
+By leveraging the power of Azure Cloud, this project ensures high performance, scalability, and reliability, providing an excellent user experience and making it a robust solution for AI-powered chat applications.
