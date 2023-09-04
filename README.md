@@ -51,3 +51,13 @@ Follow these steps to configure your Azure services and prepare your .env file:
 ### Important notes 
 Keep your .env file secure and do not commit it to your public repository. It contains sensitive data that, if exposed, can lead to unauthorized access to your Azure resources.
 The OPENAI.API_TYPE and OPENAI.API_VERSION fields are pre-set to "azure" and "2023-07-01-preview", respectively. You should only change these if you are specifically instructed to do so.
+
+### llm.py:
+
+The llm.py file creates instances of various classes that facilitate language model operations and Azure services.
+Ensure that the "gpt-35-turbo" and "text-embedding-ada-002" models are correctly configured in your Azure OpenAI service for the application to function properly.
+You can opt to use a better model, such as "gpt-4", but be aware that this could significantly increase costs.
+
+### pdf-loader.py
+
+
