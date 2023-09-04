@@ -1,5 +1,11 @@
 # ⚽ Query your A.I. about FIFA Soccer Rules ⚽
 
+
+
+https://github.com/federicopalma-pro/Chat_with_your_pdf/assets/81391107/0a3eefae-05c7-4715-aae3-3c3a375f541d
+
+
+
 ## Introduction
  
 This repository houses a codebase that leverages NLP techniques to create an interactive chat application that answers queries about FIFA soccer rules. The code is in Python and uses Langchain and Streamlit library to create an engaging and user-friendly web application.
