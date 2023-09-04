@@ -58,6 +58,10 @@ The llm.py file creates instances of various classes that facilitate language mo
 Ensure that the "gpt-35-turbo" and "text-embedding-ada-002" models are correctly configured in your Azure OpenAI service for the application to function properly.
 You can opt to use a better model, such as "gpt-4", but be aware that this could significantly increase costs.
 
-### pdf-loader.py
+### pdf-loader.py:
+ 
+The pdf-loader.py file is responsible for reading PDF documents from the 'docs' folder and preparing them for upload to the Azure Cognitive Search Service and Azure Storage Container. This code is adapted from an existing script in the Azure-Samples/azure-search-openai-demo repository (https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/scripts/prepdocs.py) and has been customized to work with the Langchain AzureSearch retriever.
+
+In order to populate your vector database (Azure Cognitive Search) and Azure Blob Container with pdf file, it is necessary to execute this script.
 
 
