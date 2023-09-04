@@ -26,15 +26,17 @@ from azure.search.documents.indexes.models import (
     VectorSearchAlgorithmConfiguration,
 )
 from tenacity import retry, stop_after_attempt, wait_random_exponential
+from decouple import config
 
 MAX_SECTION_LENGTH = 1000
 SENTENCE_SEARCH_LIMIT = 100
 SECTION_OVERLAP = 100
 
 # Setup
-cognitive_search_index = "<------->"
-pdf_category = "<------->"
-storageaccount = "<------->"
+pdf_category = "soccer"
+cognitive_search_index = config('AZURE_COGNITIVE_SEARCH_INDEX_NAME')
+pdf_container = config('AZURE_PDF_CONTAINER')
+storageaccount = config('AZURE_STORAGE_ACCOUNT')
 
 storage_creds = config('AZURE_STORAGE_KEY')
 openai.api_type = config('OPENAI.API_TYPE')
