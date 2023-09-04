@@ -21,3 +21,33 @@ Application also utilizes Azure Cognitive Search. I use it as a vector database,
 Lastly, all the PDF files used as reference documents by our application are stored in Azure Blob Storage. This service allows application to store, retrieve, and link to PDF files highly efficiently and cost-effectively.
 
 By leveraging the power of Azure Cloud, this project ensures high performance, scalability, and reliability, providing an excellent user experience and making it a robust solution for AI-powered chat applications.
+
+## Into the code:
+
+### .env:
+This project relies on several Azure services and you'll need to provide their configuration.
+
+Follow these steps to configure your Azure services and prepare your .env file:
+
+- Azure OpenAI: Go to your Azure portal, and under Azure AI services, create an Azure OpenAI service. After creation, you will receive an API key and base URL, which you will fill in the following fields:
+1. OPENAI_API_KEY_AZURE: Your Azure OpenAI API key
+2. OPENAI.API_BASE: Your Azure OpenAI base URL
+- Azure Cognitive Search Service: Create an Azure Cognitive Search Service under Azure AI services. After creation, you will get an API key, index name, and endpoint. Fill these details in the following fields:
+
+1. AZURE_COGNITIVE_SEARCH_API_KEY: Your Azure Cognitive Search API key
+2. AZURE_COGNITIVE_SEARCH_INDEX_NAME: Your Azure Cognitive Search index name
+3. AZURE_COGNITIVE_SEARCH_ENDPOINT: Your Azure Cognitive Search endpoint
+
+- Azure Storage Account: Create a new Azure Storage Account. After creation, you'll get a storage key and account name. Fill these details in the following fields:
+
+1. AZURE_STORAGE_KEY: Your Azure Storage Account key
+2. AZURE_STORAGE_ACCOUNT: Your Azure Storage Account name
+
+- Azure PDF Container: Within your newly created Azure Storage Account, create a PDF container. Fill its name in the following field:
+
+1. AZURE_PDF_CONTAINER: Your Azure PDF Container name
+2. Replace all <-------> placeholders in your .env file with the respective keys, endpoints, and names obtained from Azure.
+   
+### Important notes 
+Keep your .env file secure and do not commit it to your public repository. It contains sensitive data that, if exposed, can lead to unauthorized access to your Azure resources.
+The OPENAI.API_TYPE and OPENAI.API_VERSION fields are pre-set to "azure" and "2023-07-01-preview", respectively. You should only change these if you are specifically instructed to do so.
