@@ -77,4 +77,8 @@ Serves as the core of the application, which is built on Streamlit. To run the a
 
 This will get the Streamlit application up and running on your local machine.
 
+## Final notes
+
+This application not only clarifies all your doubts about football regulations :) but also serves as an excellent demonstration of how to create an application capable of responding to natural language queries based solely on the provided documentation. I encourage you to download it and adapt it to your projects, using different Language Models and Vector Databases.
+
 
