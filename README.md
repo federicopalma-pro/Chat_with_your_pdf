@@ -64,4 +64,8 @@ The pdf-loader.py file is responsible for reading PDF documents from the 'docs' 
 
 In order to populate your vector database (Azure Cognitive Search) and Azure Blob Container with pdf file, it is necessary to execute this script.
 
+### pdf-builder.py:
+
+This script is used to read a PDF file and write specific pages of that file to a new PDF.
+
 
