@@ -14,7 +14,7 @@ The core of this project is the Langchain Conversational Retrieval Chain, a soph
 
 My goal is to provide a comprehensive example of how to build an AI-powered chat application, guiding you through each step, from setting up the Streamlit session states, handling form submissions, retrieving and processing the AI responses to creating an interactive chat interface.
 
-Whether you're a beginner just starting with NLP or an experienced developer looking for inspiration for your next project, this repository is valuable. We encourage you to explore the code, try running it on your local machine, and let us know if you have any questions or feedback. Happy coding!
+Whether you're a beginner just starting with NLP or an experienced developer looking for inspiration for your next project, this repository is valuable. We encourage you to explore the code, try running it on your local machine, and let me know if you have any questions or feedback. Happy coding!
 
 ## Technical environment
 
