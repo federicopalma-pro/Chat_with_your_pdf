@@ -40,7 +40,7 @@ Follow these steps to configure your Azure services and prepare your .env file:
 2. OPENAI.API_BASE: Your Azure OpenAI base URL
 - Azure Cognitive Search Service: Create an Azure Cognitive Search Service under Azure AI services. After creation, you will get an API key, index name, and endpoint. Fill these details in the following fields:
 
-1. AZURE_COGNITIVE_SEARCH_API_KEY: Your Azure Cognitive Search API key
+1. AZURE_COGNITIVE_SEARCH_KEY: Your Azure Cognitive Search key
 2. AZURE_COGNITIVE_SEARCH_INDEX_NAME: Your Azure Cognitive Search index name
 3. AZURE_COGNITIVE_SEARCH_ENDPOINT: Your Azure Cognitive Search endpoint
 
