@@ -39,7 +39,7 @@ embeddings = OpenAIEmbeddings(
 
 acs = AzureSearch(
     azure_search_endpoint=config('AZURE_COGNITIVE_SEARCH_ENDPOINT'),
-    azure_search_key=config('AZURE_COGNITIVE_SEARCH_API_KEY'),
+    azure_search_key=config('AZURE_COGNITIVE_SEARCH_KEY'),
     index_name=config('AZURE_COGNITIVE_SEARCH_INDEX_NAME'),
     embedding_function=embeddings.embed_query,
     search_type="hybrid"
